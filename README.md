@@ -1,23 +1,4 @@
-### 익셉션 핸들링
-
-```java
-@RestController
-public class SampleController {
-
-	@GetMapping("/exception")
-	public void error() {
-		throw new RuntimeException(" ::: call exception in controller :: ");
-	}
-}		
-```
-
-```java
-@RestControllerAdvice
-public class GlobalExceptionHandler {
-
-	@ExceptionHandler(value = RuntimeException.class)
-	public String runtimeException() {
-		return " ::: error in handler ::: ";
-	}
-}
-```
+### Exception Handling
+- exception 발생 시 어떻게 응답값을 바꾸는지
+- 응답값의 http상태값은 어떻게 바꾸는지
+- BasicErrorController.java

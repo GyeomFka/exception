@@ -7,10 +7,9 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public enum ExceptionCode {
-	INTERNAL_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "서버 에러 입니다.");
+public enum ExceptionType {
+	CUSTOM_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "in enum class message");
 
-	private final HttpStatus httpStatus;
+	private final HttpStatus status;
 	private final String message;
-
 }

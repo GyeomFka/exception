@@ -1,4 +1,4 @@
-package sample.exception.exception.errorDto;
+package sample.exception.response;
 
 import lombok.Builder;
 import lombok.Value;
