@@ -18,6 +18,7 @@ public class SampleController {
 	public String exception() {
 		// throw new RuntimeException(" ::: exception in controller :: ");
 		//throw new SampleException(" ::: exception in controller :: ", "ERROR_CODE in controller");
+		// throw new SampleException(ExceptionType.CUSTOM_ERROR, " ::: custom error message in controller ::: ");
 		throw new SampleException(ExceptionType.CUSTOM_ERROR);
 	}
 

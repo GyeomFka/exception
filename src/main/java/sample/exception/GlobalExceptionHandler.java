@@ -23,6 +23,6 @@ public class GlobalExceptionHandler {
 			.message(code.getMessage())
 			.build();
 
-		return new ResponseEntity(result, code.getStatus());
+		return new ResponseEntity(result, code.getHttpStatus());
 	}
 }

@@ -8,8 +8,9 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum ExceptionType {
-	CUSTOM_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "in enum class message");
 
-	private final HttpStatus status;
+	CUSTOM_ERROR(HttpStatus.NOT_IMPLEMENTED, "in enum class message");
+
+	private final HttpStatus httpStatus;
 	private final String message;
 }

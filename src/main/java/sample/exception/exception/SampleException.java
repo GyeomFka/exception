@@ -31,4 +31,9 @@ public class SampleException extends RuntimeException {
 		super(message, cause, enableSuppression, writableStackTrace);
 		this.code = code;
 	}
+
+	public SampleException(ExceptionType code, String message) {
+		super(message);
+		this.code = code;
+	}
 }
